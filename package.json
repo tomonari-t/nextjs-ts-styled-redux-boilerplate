@@ -1,41 +1,46 @@
 {
-  "name": "eth-interaction-console",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nextjs-ts-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "@types/jest": "24.0.11",
-    "@types/node": "11.11.0",
-    "@types/react": "16.8.7",
-    "@types/react-dom": "16.8.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-redux": "^6.0.1",
-    "react-scripts": "2.1.8",
+    "express": "^4.16.4",
+    "next": "^8.0.4",
+    "next-redux-wrapper": "^3.0.0-alpha.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.1",
     "redux": "^4.0.1",
-    "typescript": "3.3.3333",
-    "typescript-fsa": "^3.0.0-beta-2",
-    "typescript-fsa-reducers": "^1.2.0",
-    "web3": "^1.0.0-beta.48"
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "devDependencies": {
+    "@zeit/next-typescript": "^1.1.1",
+    "@types/jest": "^24.0.11",
+    "@types/next": "^8.0.3",
+    "@types/react-redux": "^7.0.6",
+    "@types/styled-components": "^4.1.14",
+    "babel-plugin-styled-components": "^1.10.0",
+    "fork-ts-checker-webpack-plugin": "^1.0.2",
+    "jest": "^24.7.1",
+    "prettier": "1.16.4",
+    "styled-components": "^4.2.0",
+    "ts-jest": "^24.0.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.3"
   },
   "scripts": {
-    "start": "react-scripts REACT_APP_TARGET_NETWORK=rinkeby start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
+    "develop": "node ./src/server.js",
+    "test": "jest -c ./src/jest.config.json"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomonari-t/eth-interactive-console.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@types/react-redux": "^7.0.3",
-    "tslint": "^5.13.1",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.0.1",
-    "tslint-react": "^3.6.0"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomonari-t/eth-interactive-console/issues"
+  },
+  "homepage": "https://github.com/tomonari-t/eth-interactive-console#readme"
 }

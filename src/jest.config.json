@@ -1,0 +1,14 @@
+{
+  "moduleFileExtensions": ["ts", "tsx", "js"],
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "globals": {
+    "ts-jest": {
+      "tsConfigFile": "<rootDir>/tsconfig.json"
+    }
+  },
+  "collectCoverage": true,
+  "coveragePathIgnorePatterns": ["/node_modules/"],
+  "coverageReporters": ["json", "lcov", "text", "text-summary"]
+}
