@@ -1,9 +1,11 @@
-import styled from 'styled-components'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
-export default (_: any) => {
-  return <Header>test</Header>
+export default () => {
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  )
 }
-
-const Header = styled.h1`
-  color: green;
-`

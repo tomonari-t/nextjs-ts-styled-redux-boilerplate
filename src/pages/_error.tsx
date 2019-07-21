@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { misThemeColor } from '../theme'
+import Link from 'next/link'
 
 const NotFound = () => {
   return (
@@ -14,9 +15,11 @@ const NotFound = () => {
         <br />
         移動した可能性がございます。
       </Description>
-      <ToTopButton>
-        <ToTopButtonText>トップページへ</ToTopButtonText>
-      </ToTopButton>
+      <Link href='/'>
+        <ToTopButton>
+          <ToTopButtonText>トップページへ</ToTopButtonText>
+        </ToTopButton>
+      </Link>
       <CopyRight>Copyright © Makuake, Inc. All Rights Reserved.</CopyRight>
     </Container>
   )
@@ -59,7 +62,7 @@ const Description = styled.p`
   margin-bottom: 56px;
 `
 
-const ToTopButton = styled.div`
+const ToTopButton = styled.a`
   border: 1px solid rgba(167, 167, 167, 1);
   box-sizing: border-box;
   display: flex;
