@@ -1,0 +1,31 @@
+export const misThemeColor = {
+  primary: 'rgba(74, 192, 213, 1)',
+  dark87: 'rgba(0, 0, 0, .87)',
+  dark56: 'rgba(0, 0, 0, .56)',
+  dark26: 'rgba(0, 0, 0, .26',
+  bg: 'rgba(238, 238, 238, 1)',
+  white: 'rgba(255, 255, 255, 1)',
+  pink: 'rgba(251, 43, 121, 1)',
+  blue: 'rgba(24, 213, 255, 1)',
+  yellow: 'rgba(254, 229, 4, 1)',
+  green: 'rgba(220, 247, 124, 1)',
+  navy: 'rgba(3, 26, 67, 1)',
+}
+
+export const font = {
+  pcTitle: `font-size: 92px; font-weight: thin;`,
+  pcH1: `font-size: 48px; font-weight: medium;`,
+  pcH2: `font-size: 36px; font-weight: medium;`,
+  pcH3: `font-size: 24px; font-weight: medium;`,
+  pcP: `font-size: 18px; font-weight: medium;`,
+  pcPArticle: `font-size: 18px; font-weight: regular;`,
+  pcCaption: `font-size: 12px; font-weight: medium;`,
+  spTitle: `font-size: 64px; font-weight: thin;`,
+  spH1: `font-size: 24px; font-weight: medium;`,
+  spH2: `font-size: 20px; font-weight: medium;`,
+  spH3: `font-size: 18px; font-weight: medium;`,
+  spP: `font-size: 16px; font-weight: medium;`,
+  spPArticle: `font-size: 16px; font-weight: regular;`,
+  spCaption: `font-size: 12px; font-weight: medium;`,
+  spSmall: `font-size: 14px; font-weight: medium;`,
+}
