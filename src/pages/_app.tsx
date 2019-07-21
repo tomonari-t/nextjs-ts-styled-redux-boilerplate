@@ -4,8 +4,8 @@ import { Provider } from 'react-redux'
 import App, { Container } from 'next/app'
 import withRedux from 'next-redux-wrapper'
 import Head from 'next/head'
-import globalStyle from '../styles/global'
-
+import '../styles/reset.scss'
+import '../styles/global.scss'
 export const reducer = (
   state = { foo: '' },
   action: { type: string; payload: string },
@@ -36,9 +36,6 @@ class MisApp extends App<{ store: any }> {
             rel='stylesheet'
           />
         </Head>
-        <style jsx global>
-          {globalStyle}
-        </style>
         <Provider store={store}>
           <Component {...pageProps} />
         </Provider>
