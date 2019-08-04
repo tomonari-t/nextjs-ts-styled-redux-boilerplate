@@ -1,29 +1,11 @@
 import React from 'react'
-import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import App, { Container } from 'next/app'
 import withRedux from 'next-redux-wrapper'
 import Head from 'next/head'
 import '../styles/reset.scss'
 import '../styles/global.scss'
-export const reducer = (
-  state = { foo: '' },
-  action: { type: string; payload: string },
-) => {
-  switch (action.type) {
-    case 'FOO':
-      return { ...state, foo: action.payload }
-    default:
-      return state
-  }
-}
-
-const makeStore = (
-  initialState: { foo: string } = { foo: 'start' },
-  _: withRedux.StoreCreatorOptions<{ foo: string }, any, any, any, any>,
-) => {
-  return createStore(reducer, initialState)
-}
+import makeStore from '../redux/makeStore'
 
 class MisApp extends App<{ store: any }> {
   render() {
@@ -44,4 +26,4 @@ class MisApp extends App<{ store: any }> {
   }
 }
 
-export default withRedux<{ foo: string }>(makeStore as any)(MisApp)
+export default withRedux(makeStore)(MisApp)
